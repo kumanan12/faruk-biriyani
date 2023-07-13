@@ -1,27 +1,47 @@
-body{
-    margin: 20px;
-    padding:20px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
-    font-size: 48px;
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    margin: 0;
+    /* border: 2px solid gray; - for my convenience; */
 }
 
-.red-title{
+/* .red-title{
     color:  #CE1211;
-}
+} */
 
 button {
     background-color: #CE1211;
     color: white;
-    height: 20px;
-    max-width: 150px;
-    padding: 15px;
-
+    padding: 0.75rem;
+    border-radius: 2rem;
+    align-items: center;
+    border: none;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    /* border: 2px red solid; */
+    padding: 1rem;
+    background-color:ghostwhite;
+}
+
+.rest-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rnitem {
+    padding: 0.5rem;
+}
 /* ABOUT PAGE */
 
-
-/* Contac us */
+/* Contact Us */
