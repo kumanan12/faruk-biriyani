@@ -42,6 +42,18 @@ header {
 .rnitem {
     padding: 0.5rem;
 }
+
+.hero-carousel {
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "hero-caro hero-caro hero-caro"
+    ". intro .";
+}
 /* ABOUT PAGE */
 
 /* Contact Us */
