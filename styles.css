@@ -1,42 +1,11 @@
-/* body{
-    margin: 20px;
-    padding:20px;
-}
-
-h1{
-    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
-    font-size: 48px;
-}
-
-.red-title{
-    color:  #CE1211;
-}
-
-button {
-    background-color: #CE1211;
-    color: white;
-    height: 20px;
-    max-width: 150px;
-    padding: 15px;
-
-<<<<<<< Updated upstream
-} */
-
-/* ABOUT PAGE */
-
-
-/* Contac us */
-=======
-}*/
->>>>>>> Stashed changes
-
-
-
 body{
     margin: 0;
     padding:0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+=======
+    border-radius: 50;
+>>>>>>> 41a5f5cae0a9cbdaaa21ae96ed95b892a594395f
 }
 
 .h1{
