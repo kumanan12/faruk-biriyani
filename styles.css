@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: ghostwhite;
 }
 
 h1 {
@@ -8,14 +9,14 @@ h1 {
     font-size: 1.25rem;
     padding: 0 1rem;
     margin: 0;
-    /* border: 2px solid gray; - for my convenience; */
+    /* border: 2px solid gray;  */
 }
 
 /* .red-title{
     color:  #CE1211;
 } */
 
-button {
+button.booking {
     background-color: #CE1211;
     color: white;
     padding: 0.75rem;
@@ -24,13 +25,17 @@ button {
     border: none;
 }
 
+button.links {
+    display: none;
+}
+
 header {
     display: grid;
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 4fr 4fr;
     align-items: center;
     /* border: 2px red solid; */
     padding: 1rem;
-    background-color:ghostwhite;
+    background-color: white;
 }
 
 .rest-nav {
@@ -44,16 +49,55 @@ header {
 }
 
 .hero-carousel {
+    display: flex;
     justify-content: center;
+    grid-area: hero-caro;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
-    "hero-caro hero-caro hero-caro"
-    ". intro .";
+.intro-info {
+    grid-area: intro;
+    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+    font-size: 1.5rem;
 }
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "hero-caro hero-caro hero-caro"
+        ". intro .";
+}
+
+.hero-imgs {
+    width: 80%;
+    display: center;
+}
+
+@media screen and (min-width: 600px) {
+    button.links {
+        display: inline-block;
+        background-color: #ffffff;
+        color: white;
+        padding: 0.75rem;
+        border-radius: 2rem;
+        align-items: center;
+        border: 2px black solid;
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color:black
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
 /* ABOUT PAGE */
 
 /* Contact Us */
