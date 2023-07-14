@@ -14,7 +14,7 @@ body{
 h1{
     font-family: 'Roboto';
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
    
 }
 
@@ -47,6 +47,21 @@ header{
 
 .red-title{
     color:  #CE1211;
+}
+
+.page-name{
+    text-align: center;
+    color: grey;
+    font-size: 13px;
+    margin-bottom: none;
+}
+
+.about-page-title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-top: none;
 }
 
 button {
