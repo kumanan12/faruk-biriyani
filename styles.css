@@ -1,6 +1,9 @@
-body {
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+}
+
+body {
     background-color: ghostwhite;
 }
 
@@ -8,7 +11,6 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25rem;
     padding: 0 1rem;
-    margin: 0;
     /* border: 2px solid gray;  */
 }
 
@@ -71,6 +73,7 @@ header {
 .hero-imgs {
     width: 80%;
     display: center;
+    margin: 1rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -98,6 +101,54 @@ header {
     }
 }
 
-/* ABOUT PAGE */
+/* Nav Menu - Pop Up */
 
-/* Contact Us */
+.navmenu {
+    z-index: 999;
+    top: 0.5rem;
+    position: fixed;
+    right: 0.5rem;
+    background-color:burlywood;
+    padding: 0;
+    width: 15rem;
+    margin: 0;
+    border-radius: 0.5rem;;
+    display: none;
+}
+
+ul.navmenu-list {
+    list-style-type: none;
+}
+
+li.menu-items {
+    border-bottom: 1px black solid;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+
+li.menu-items:last-child {
+    border-bottom: none;
+}
+
+li.menu-items:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.x-out {
+    text-align: right;
+}
+
+a.menu-links {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fa-x {
+    height: 1rem;
+    width: 1rem;
+    display: grid;
+    place-items: center;
+}
