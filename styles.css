@@ -30,8 +30,8 @@ button.links {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     /* border: 2px red solid; */
     padding: 1rem;
@@ -71,6 +71,7 @@ header {
 .hero-imgs {
     width: 80%;
     display: center;
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 600px) {
@@ -96,6 +97,11 @@ header {
     header {
         grid-template-columns: 1fr 2fr;
     }
+
+    .hero-imgs {
+        width: 60%;
+    }
+
 }
 
 /* ABOUT PAGE */
