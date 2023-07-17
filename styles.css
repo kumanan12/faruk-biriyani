@@ -6,9 +6,43 @@ body{
     border-radius: 50;
 }
 
-.h1{
+h1{
     font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
     font-size: 48px;
+}
+
+h1{
+    font-family: 'Roboto';
+    margin: 0;
+    font-size: 18px;
+   
+}
+
+header{
+    height:70px;
+    padding-left:20px ;
+    padding-right: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 4fr 2fr  3fr 1fr;
+    grid-template-areas: "brand . booking  hamburger";
+    background-color: #f0f0f0;
+    
+}
+
+.brand {
+    grid-area: brand;
+    /* border: 1px solid green; */
+  
+}
+
+.booking {
+    grid-area: booking;
+    
+}
+
+.hamburger {
+    grid-area: hamburger;
 }
 
 h1{
@@ -48,14 +82,15 @@ header{
 button {
     background-color: #CE1211;
     color: white;
-    height: 30px;
+    height: 20px;
     max-width: 150px;
     padding: 5px 10px;
     line-height: 20px;
     border-radius: 30px;
     font-weight: 300;
-}
+   
 
+}
 .nav-menu{
     /* background-image: url(\"\\F479\"); */
 }
@@ -64,8 +99,6 @@ button {
     width: 32px;
     height: 32px;
 }
-
-
 
 /* ABOUT PAGE */
 .red-title{
