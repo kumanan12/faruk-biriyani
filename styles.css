@@ -158,3 +158,85 @@ button {
     margin: 10px;
     font-style: italic;
 }
+
+/* Contac us */
+
+/* Food Menu Page */
+.h1{
+    padding:0px;
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: grid;
+    
+}
+
+
+.menu{
+    display: grid;
+    justify-content: center;
+}
+
+.item{
+    display: grid;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+.item-image{
+    height: 200px;
+    margin: 20px;
+}
+
+.item-names{
+    font-family: inter, sans serif;
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+    justify-self: center;
+    margin: 0px 0px 5px;
+}
+
+.descrip{
+    font-family: inter, sans serif;
+    font-size: 16px;
+    color: #8d8d9b;
+    align-items: center;
+    justify-self: center;
+    margin: 0px 0px 5px;
+}
+
+.item-price{
+    font-family: inter, sans serif; /* it said apple system font?*/
+    font-size: 24px;
+    font-weight: 800;
+    color: #ce1212;
+    align-items: center;
+    justify-self: center;
+    margin: 0px 0px 16px;
+}
+
+.types{
+    font-size: 35px;
+}
+
+.links{
+    font-size: 15px;
+    color: #CE1211;
+}
+
+
+
+
+
