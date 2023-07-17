@@ -228,11 +228,12 @@ li.menu-items:first-child {
     .h1 {
         padding: 0px;
         margin: 0px;
-        font-size: 48px;
         font-weight: 400;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+        font-size: 48px;
     }
 
     .nav {
