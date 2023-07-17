@@ -1,2 +1,2 @@
-# faruk-biriyani
-Website for Faruk Biriyani
+# faruk-biryani
+Website for Faruk Biryani
