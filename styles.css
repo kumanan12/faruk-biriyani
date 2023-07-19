@@ -121,7 +121,7 @@ button {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/placeholder_image.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-3.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,6 +133,7 @@ button {
 
 .hero-text {
     text-align: center;
+    padding: 20px 0;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -140,7 +141,7 @@ button {
     border-style: solid;
     background-color: white;
     width: 300px;
-    height: 130px;
+    height: 80px;
 }
 
 .black-text{
