@@ -1,118 +1,170 @@
-body{
+* {
+    padding: 0;
     margin: 0;
-    padding:0;
+}
+
+body {
+    background-color: ghostwhite;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     border-radius: 50;
 }
 
-h1{
-    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
-    font-size: 48px;
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    /* border: 2px solid gray;  */
 }
 
-h1{
-    font-family: 'Roboto';
-    margin: 0;
-    font-size: 18px;
-   
+.red-title {
+    color: #CE1211;
 }
 
-header{
-    height:70px;
-    padding-left:20px ;
-    padding-right: 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 4fr 2fr  3fr 1fr;
-    grid-template-areas: "brand . booking  hamburger";
-    background-color: #f0f0f0;
-    
-}
-
-.brand {
-    grid-area: brand;
-    /* border: 1px solid green; */
-  
-}
-
-.booking {
-    grid-area: booking;
-    
-}
-
-.hamburger {
-    grid-area: hamburger;
-}
-
-h1{
-    font-family: 'Roboto';
-    margin: 0;
-    font-size: 20px;
-   
-}
-
-header{
-    height:70px;
-    padding-left:20px ;
-    padding-right: 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 4fr 2fr  4fr 1fr;
-    grid-template-areas: "brand . booking  hamburger";
-    background-color: #f0f0f0;
-    
-}
-
-.brand {
-    grid-area: brand;
-    /* border: 1px solid green; */
-  
-}
-
-.booking {
-    grid-area: booking;
-    
-}
-
-.hamburger {
-    grid-area: hamburger;
-}
-
-button {
+button.booking {
     background-color: #CE1211;
     color: white;
-    height: 20px;
-    max-width: 150px;
-    padding: 5px 10px;
-    line-height: 20px;
-    border-radius: 30px;
-    font-weight: 300;
-   
-
-}
-.nav-menu{
-    /* background-image: url(\"\\F479\"); */
+    padding: 0.75rem;
+    border-radius: 2rem;
+    align-items: center;
+    border: none;
 }
 
-.hamburger{
-    width: 32px;
-    height: 32px;
+button.links {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px red solid; */
+    padding: 1rem;
+    background-color: white;
+}
+
+.rest-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rnitem {
+    padding: 0.5rem;
+}
+
+.hero-carousel {
+    display: flex;
+    justify-content: center;
+    grid-area: hero-caro;
+}
+
+.intro-info {
+    grid-area: intro;
+    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "hero-caro hero-caro hero-caro"
+        ". intro .";
+}
+
+.hero-imgs {
+    width: 80%;
+    display: center;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    button.links {
+        display: inline-block;
+        background-color: #ffffff;
+        color: white;
+        padding: 0.75rem;
+        border-radius: 2rem;
+        align-items: center;
+        border: 2px black solid;
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: black
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .hero-imgs {
+        width: 60%;
+    }
+
+}
+
+/* Nav Menu - Pop Up */
+
+.navmenu {
+    z-index: 999;
+    top: 0.5rem;
+    position: fixed;
+    right: 0.5rem;
+    background-color: burlywood;
+    padding: 0;
+    width: 15rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    ;
+    display: none;
+}
+
+ul.navmenu-list {
+    list-style-type: none;
+}
+
+li.menu-items {
+    border-bottom: 1px black solid;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+
+li.menu-items:last-child {
+    border-bottom: none;
+}
+
+li.menu-items:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.x-out {
+    text-align: right;
 }
 
 /* ABOUT PAGE */
-.red-title{
-    color:  #CE1211;
+
+.red-title {
+    color: #CE1211;
 }
 
-.page-name{
+.page-name {
+    padding-top: 10px;
     text-align: center;
     color: grey;
     font-size: 13px;
     margin-bottom: none;
 }
 
-.about-page-title{
+.about-page-title {
     text-align: center;
     font-size: 50px;
     font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
@@ -133,8 +185,7 @@ button {
 
 .hero-text {
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 30px;
+    padding: 20px 0;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -142,21 +193,112 @@ button {
     border-style: solid;
     background-color: white;
     width: 300px;
-    height: 100px;
+    height: 80px;
 }
 
-.black-text{
+.black-text {
     color: black;
     font-size: 25px;
 }
 
-.red-text{
+.red-text {
     color: #CE1211;
     font-size: 25px;
     font-weight: bold;
 }
 
-.final-text{
-    margin: 10px;
-    font-style: italic;
-}
+
+    .final-text {
+        margin: 10px;
+        font-style: italic;
+    }
+
+    .fa-x {
+        height: 1rem;
+        width: 1rem;
+        display: grid;
+        place-items: center;
+    }
+
+    a.menu-links {
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Food Menu Page */
+    .h1 {
+        padding: 0px;
+        margin: 0px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+        font-size: 48px;
+    }
+
+    .nav {
+        display: grid;
+
+    }
+
+
+    .menu {
+        display: grid;
+        justify-content: center;
+    }
+
+    .item {
+        display: grid;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        justify-content: center;
+
+    }
+
+    .item-image {
+        height: 200px;
+        margin: 20px;
+    }
+
+    .item-names {
+        font-family: inter, sans serif;
+        font-size: 22px;
+        font-weight: bold;
+        align-items: center;
+        justify-self: center;
+        margin: 0px 0px 5px;
+    }
+
+    .descrip {
+        font-family: inter, sans serif;
+        font-size: 16px;
+        color: #8d8d9b;
+        align-items: center;
+        justify-self: center;
+        margin: 0px 0px 5px;
+    }
+
+    .item-price {
+        font-family: inter, sans serif;
+        /* it said apple system font?*/
+        font-size: 24px;
+        font-weight: 800;
+        color: #ce1212;
+        align-items: center;
+        justify-self: center;
+        margin: 0px 0px 16px;
+    }
+
+    .types {
+        font-size: 35px;
+    }
+
+    .links {
+        font-size: 15px;
+        color: #CE1211;
+    }
