@@ -21,18 +21,9 @@ h1 {
     color: #CE1211;
 }
 
-button.booking {
-    background-color: #CE1211;
-    color: white;
-    padding: 0.75rem;
-    border-radius: 2rem;
-    align-items: center;
-    border: none;
-}
 
-button.links {
-    display: none;
-}
+
+/* Header stuff */
 
 header {
     display: flex;
@@ -53,31 +44,17 @@ header {
     padding: 0.5rem;
 }
 
-.hero-carousel {
-    display: flex;
-    justify-content: center;
-    grid-area: hero-caro;
+button.booking {
+    background-color: #CE1211;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 2rem;
+    align-items: center;
+    border: none;
 }
 
-.intro-info {
-    grid-area: intro;
-    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-}
-
-.body-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-        "hero-caro hero-caro hero-caro"
-        ". intro .";
-}
-
-.hero-imgs {
-    width: 80%;
-    display: center;
-    border-radius: 50%;
-    margin: 1rem;
+button.links {
+    display: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -114,16 +91,17 @@ header {
 
 .navmenu {
     z-index: 999;
-    top: 0.5rem;
     position: fixed;
+    top: 0.5rem;
     right: 0.5rem;
-    background-color: burlywood;
+    background-color: ghostwhite;
     padding: 0;
     width: 15rem;
     margin: 0;
     border-radius: 0.5rem;
-    ;
     display: none;
+    font-weight: bold;
+    color:#CE1211;
 }
 
 ul.navmenu-list {
@@ -131,10 +109,9 @@ ul.navmenu-list {
 }
 
 li.menu-items {
-    border-bottom: 1px black solid;
+    border-bottom: 0.5px #CE1211 solid;
     padding: 0.5rem;
-    margin: 0.5rem;
-
+    margin: 0 0.5rem;
 }
 
 li.menu-items:last-child {
@@ -146,11 +123,49 @@ li.menu-items:first-child {
     justify-content: space-between;
 }
 
-.x-out {
-    text-align: right;
+.fa-x {
+    font-size: 1rem;
+    display: grid;
+    place-items: center;
 }
 
-/* ABOUT PAGE */
+a.menu-links {
+    text-decoration: none;
+    color: #CE1211;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+/* Home page */
+
+.hero-carousel {
+    display: flex;
+    justify-content: center;
+    grid-area: hero-caro;
+}
+
+.intro-info {
+    grid-area: intro;
+    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "hero-caro hero-caro hero-caro"
+        ". intro .";
+}
+
+.hero-imgs {
+    width: 80%;
+    display: center;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* About page */
 
 .red-title {
     color: #CE1211;
@@ -211,20 +226,8 @@ li.menu-items:first-child {
         font-style: italic;
     }
 
-    .fa-x {
-        height: 1rem;
-        width: 1rem;
-        display: grid;
-        place-items: center;
-    }
+/* Food Menu Page */
 
-    a.menu-links {
-        text-decoration: none;
-        color: black;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    /* Food Menu Page */
     .h1 {
         padding: 0px;
         margin: 0px;
@@ -236,11 +239,14 @@ li.menu-items:first-child {
         font-size: 48px;
     }
 
-    .nav {
-        display: grid;
-
+    a.back-to-home {
+        text-decoration: none;
+        color: black;
     }
 
+    .nav {
+        display: grid;
+    }
 
     .menu {
         display: grid;
