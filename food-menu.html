@@ -16,43 +16,62 @@
 </head>
 
 <body>
-    <header>
-        <div class="brand">
-          <h1><a href="/index.html" class="back-to-home">Biryani Amore</a></h1>
-        </div>
-        <div class="rest-nav">
-          <div class="all-links rnitem">
-            <button class="links">
-              <a href="/about_page.html" class="nav-links">About</a>
-            </button>
-            <button class="links">
-              <a href="/food-menu.html" class="nav-links">Food Menu</a>
-            </button>
-            <button class="links">
-              <a href="/contact.html" class="nav-links">Contact Us</a>
-            </button>
-            <button class="booking">Book a Table</button>
-          </div>
-          <div class="hamburger rnitem" onclick="toggleNavMenu()">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="navmenu" id="navMenu">
-            <ul class="navmenu-list">
-              <li class="menu-items" >
-                <a href="/about_page.html" class="menu-links">About</a>
-                <i onclick="hideNavMenu()" class="fa-solid fa-x"></i>
-              
-              </li>
-              <li class="menu-items">
-                <a href="/contact.html" class="menu-links">Contact Us</a>
-              </li>
-              <li class="menu-items">
-                <a href="/food-menu.html" class="menu-links">Food Menu</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+  <header>
+    <div class="brand">
+      <h1><a href="/index.html" class="back-to-home">Biryani Amore</a></h1>
+    </div>
+    <div class="rest-nav">
+      <ul class="desktop-nav-list">
+        <li class="nav-list-item">
+          <a href="/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/about_page.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/food-menu.html" class="nav-link active-nl">Food Menu</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/contact.html" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+      <div class="all-links rnitem">
+        <!-- <button class="links">
+          <a href="/about_page.html" class="nav-links">About</a>
+        </button>
+        <button class="links">
+          <a href="/food-menu.html" class="nav-links">Food Menu</a>
+        </button>
+        <button class="links">
+          <a href="/contact.html" class="nav-links">Contact Us</a>
+        </button> -->
+        <button class="booking">Order Online</button>
+      </div>
+      <div class="hamburger rnitem" onclick="toggleNavMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navmenu" id="navMenu">
+        <ul class="navmenu-list">
+          <li class="menu-items">
+            <i onclick="hideNavMenu()" class="fa-solid fa-x"></i>
+          </li>
+          <li class="menu-items">
+            <a href="/index.html" class="menu-links">Home</a>
+          </li>
+          <li class="menu-items" >
+            <a href="/about_page.html" class="menu-links">About</a>
+            <!-- <i onclick="hideNavMenu()" class="fa-solid fa-x"></i> -->
+          </li>
+          <li class="menu-items">
+            <a href="/contact.html" class="menu-links">Contact Us</a>
+          </li>
+          <li class="menu-items active-tab">
+            <a href="/food-menu.html" class="menu-links">Food Menu</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
     <section>
         <h1 class="h1">Check our yummy menu</h1>
@@ -95,14 +114,22 @@
         </div>
     </section>
     <script>
-        function toggleNavMenu() {
-          const navMenu = document.getElementById("navMenu");
-          navMenu.style.display = "block";
-        }
+        // function toggleNavMenu() {
+        //   const navMenu = document.getElementById("navMenu");
+        //   navMenu.style.display = "block";
+        // }
   
+        // function hideNavMenu() {
+        //   const navMenu = document.getElementById("navMenu");
+        //   navMenu.style.display = "none";
+        // }
+
+        function toggleNavMenu() {
+            document.getElementById('navMenu').classList.toggle('nav-is-active');
+        }
+
         function hideNavMenu() {
-          const navMenu = document.getElementById("navMenu");
-          navMenu.style.display = "none";
+            document.getElementById('navMenu').classList.remove('nav-is-active');
         }
       </script>
 </body>
