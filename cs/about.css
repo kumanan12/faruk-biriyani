@@ -1,0 +1,27 @@
+@media screen and (min-width:800px){
+
+    .hero-image, .hero-text, .section-container{
+        all:unset;
+    }
+
+    .section-container{
+        display: flex;
+        justify-content: center;
+        row-gap: 20px;
+        
+    }
+
+    .hero-image{
+        flex-basis: 50%;
+        border: 2px solid green;
+    }
+
+    .final-text{
+        flex-basis: 50%;
+        border: 2px solid red;
+    }
+
+  
+
+    
+}
