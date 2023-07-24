@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biriyani Amore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cs/contact.css" />
+    <script src="https://kit.fontawesome.com/f13e1b6cfe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+          <h1><a href="/index.html" class="back-to-home">Biryani Amore</a></h1>
+        </div>
+        <div class="rest-nav">
+          <ul class="desktop-nav-list">
+            <li class="nav-list-item">
+              <a href="/index.html" class="nav-link active-nl">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="/about_page.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="/food-menu.html" class="nav-link">Food Menu</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="/contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="all-links rnitem">
+            <!-- <button class="links">
+              <a href="/about_page.html" class="nav-links">About</a>
+            </button>
+            <button class="links">
+              <a href="/food-menu.html" class="nav-links">Food Menu</a>
+            </button>
+            <button class="links">
+              <a href="/contact.html" class="nav-links">Contact Us</a>
+            </button> -->
+            <button class="booking">Order Online</button>
+          </div>
+          <div class="hamburger rnitem" onclick="toggleNavMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="navmenu" id="navMenu">
+            <ul class="navmenu-list">
+              <li class="menu-items">
+                <i onclick="hideNavMenu()" class="fa-solid fa-x"></i>
+              </li>
+              <li class="menu-items active-tab">
+                <a href="/index.html" class="menu-links">Home</a>
+              </li>
+              <li class="menu-items" >
+                <a href="/about_page.html" class="menu-links">About</a>
+                <!-- <i onclick="hideNavMenu()" class="fa-solid fa-x"></i> -->
+              </li>
+              <li class="menu-items">
+                <a href="/contact.html" class="menu-links">Contact Us</a>
+              </li>
+              <li class="menu-items">
+                <a href="/food-menu.html" class="menu-links">Food Menu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <!-- <h1>Hello <span class="red-title">World</span></h1>
+    <p>layout changes</p>
+    <button>
+        <i class="fa-brands fa-facebook"></i>
+        Order now.
+    </button> -->
+    <div class="main-container">
+        <div class="top-page">
+            <p class="page-name">CONTACT</p>
+            <h1 class="page-title">Need help? <span style="color: red;">Contact Us</span></h1>
+        </div>
+        <div class="map-of-location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12099.581347611935!2d-73.99760376284684!3d40.69830266933247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a35d886ece5%3A0x730f8f07974f158a!2sBRAYAN%20INDIA!5e0!3m2!1sen!2sus!4v1690220722601!5m2!1sen!2sus"
+                width=100% height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <section class="contact-info">
+            <div class="row">
+                <div class="text-and-info">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-map"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <h3>Our Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-and-info">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <h3>Email Us</h3>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-and-info">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-phone"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <h3>Contact Us</h3>
+                        <p>+1 5589 55488 55</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-and-info">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-store"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <h3>Opening Hours</h3>
+                        <div>
+                            <strong>Mon-Sat:</strong> 11AM - 23PM;
+                            <strong>Sunday:</strong> Closed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <script>
+            // function toggleNavMenu() {
+            //   const navMenu = document.getElementById("navMenu");
+            //   navMenu.style.display = "block";
+            // }
+      
+            // function hideNavMenu() {
+            //   const navMenu = document.getElementById("navMenu");
+            //   navMenu.style.display = "none";
+            // }
+      
+            function toggleNavMenu() {
+                  document.getElementById('navMenu').classList.toggle('nav-is-active');
+              }
+      
+            function hideNavMenu() {
+                  document.getElementById('navMenu').classList.remove('nav-is-active');
+              }
+          </script>
+</body>
+
+</html>
