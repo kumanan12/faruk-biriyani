@@ -228,33 +228,6 @@ li.active-tab a {
 
 /* Home page */
 
-.hero-carousel {
-    display: flex;
-    justify-content: center;
-    grid-area: hero-caro;
-}
-
-.intro-info {
-    grid-area: intro;
-    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-}
-
-.body-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-        "hero-caro hero-caro hero-caro"
-        ". intro .";
-}
-
-.hero-imgs {
-    width: 80%;
-    display: center;
-    border-radius: 50%;
-    margin: 1rem;
-}
-
 /* About page */
 
 .red-title {

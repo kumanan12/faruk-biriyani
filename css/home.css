@@ -1,0 +1,127 @@
+/* Sections and layout */
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: hero-caro;
+}
+
+.intro-info {
+    grid-area: intro;
+    /* border: 2px green solid; */
+    padding: 1rem;
+}
+
+div.intro-buttons {
+    /* border: 2px green solid; */
+    grid-area: intro-btns;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Intro text */
+
+.short-phrase {
+    font-family: 'Amatic SC', cursive, 'Open Sans', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem 1.5rem;
+    /* border: 2px red solid; */
+}
+
+.intro-description {
+    color: #7f7f90;
+    text-align: center;
+    display: inline-block;
+    margin: 0 1.5rem;
+    /* border: 2px blue solid; */
+}
+
+/* Carousel image */
+
+.hero-imgs {
+    width: 80%;
+    display: center;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    .hero-imgs {
+        width: 60%;
+    }
+}
+
+/* Desktop layout and text*/
+
+@media screen and (min-width: 1000px) {
+    .body-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .short-phrase {
+        text-align: left;
+    }
+
+    .intro-description {
+        text-align: left;
+    }
+
+    .left-or-bottom {
+        width: 50%;
+    }
+
+    .hero-carousel {
+        width: 50%;
+    }
+
+    .hero-imgs {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+/* Buttons */
+
+div.order-btn button {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: #ce1211;
+    font-weight: bold;
+    width: 10rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+div.video-btn button {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    backdrop-filter: blur(0rem);
+    padding: 0.75rem;
+    border-radius: 2rem;
+    align-items: center;
+    font-weight:bold;
+    width: 10rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+.fa-circle-play {
+    color: #ce1211;
+    font-size: 1.5rem;
+}
