@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biryani Amore</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<script
-      src="https://kit.fontawesome.com/b85a2be528.js"
-      crossorigin="anonymous"
-    ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biryani Amore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <script src="https://kit.fontawesome.com/b85a2be528.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,15 +36,7 @@
         </li>
       </ul>
       <div class="all-links rnitem">
-        <!-- <button class="links">
-          <a href="/about_page.html" class="nav-links">About</a>
-        </button>
-        <button class="links">
-          <a href="/food-menu.html" class="nav-links">Food Menu</a>
-        </button>
-        <button class="links">
-          <a href="/contact.html" class="nav-links">Contact Us</a>
-        </button> -->
+
         <button class="booking">Order Online</button>
       </div>
       <div class="hamburger rnitem" onclick="toggleNavMenu()">
@@ -57,7 +50,7 @@
           <li class="menu-items">
             <a href="/index.html" class="menu-links">Home</a>
           </li>
-          <li class="menu-items active-tab" >
+          <li class="menu-items active-tab">
             <a href="/about_page.html" class="menu-links">About</a>
             <!-- <i onclick="hideNavMenu()" class="fa-solid fa-x"></i> -->
           </li>
@@ -72,43 +65,45 @@
     </div>
   </header>
 
-    <section>
-        <div class="page-header">
-            <p class="page-name">ABOUT US</p>
-            <h1 class="about-page-title">Learn More <span class="red-title">About Us</span></h1>
-        </div>
-        <div class="hero-image">
-            <div class="hero-text">
-              <h3 class="black-text">Book a Table</h3>
-              <p class="red-text">*number*</p>
-            </div>
-          </div>
-        <div class="final-text">
-            <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, neque eveniet minus placeat aliquam consequuntur repellendus accusamus amet! Totam architecto repellendus ea, illo natus earum eveniet nam quisquam aut! Magnam?</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis iure dolorum cupiditate. In, sit repellat sequi quis duci voluptas molestias!</li> 
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis iure dolorum cupiditate. In, sit repellat sequi quis duci voluptas molestias!</li> 
-            </ul>
-        </div>
-    </section>
-    <script>
-        // function toggleNavMenu() {
-        //   const navMenu = document.getElementById("navMenu");
-        //   navMenu.style.display = "block";
-        // }
-  
-        // function hideNavMenu() {
-        //   const navMenu = document.getElementById("navMenu");
-        //   navMenu.style.display = "none";
-        // }
+  <section>
+    <div class="page-header">
+      <p class="page-name">ABOUT US</p>
+      <h1 class="about-page-title">Learn More <span class="red-title">About Us</span></h1>
+    </div>
+    <div class="section-container">
 
-        function toggleNavMenu() {
-            document.getElementById('navMenu').classList.toggle('nav-is-active');
-        }
+      <div class="hero-image">
+        <div class="hero-text">
+          <h3 class="black-text">Book a Table</h3>
+          <p class="red-text">*number*</p>
+        </div>
+      </div>
+      <div class="final-text">
+        <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, neque eveniet minus
+          placeat aliquam consequuntur repellendus accusamus amet! Totam architecto repellendus ea, illo natus earum
+          eveniet nam quisquam aut! Magnam?</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis iure dolorum cupiditate. In, sit
+            repellat sequi quis duci voluptas molestias!</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis iure dolorum cupiditate. In, sit
+            repellat sequi quis duci voluptas molestias!</li>
+        </ul>
+      </div>
 
-        function hideNavMenu() {
-            document.getElementById('navMenu').classList.remove('nav-is-active');
-        }
-      </script>
+    </div>
+
+  </section>
+  <script>
+
+
+    function toggleNavMenu() {
+      document.getElementById('navMenu').classList.toggle('nav-is-active');
+    }
+
+    function hideNavMenu() {
+      document.getElementById('navMenu').classList.remove('nav-is-active');
+    }
+  </script>
 </body>
+
 </html>
