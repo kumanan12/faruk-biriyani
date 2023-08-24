@@ -181,40 +181,52 @@ button {
 .menu{
     display: grid;
     justify-content: center;
+    
+    
+}
+
+.menu2{
+    display: grid;
+    
 }
 
 .item{
     display: grid;
     width: 300px;
     height: 300px;
-    padding: 20px;
+    padding: 60px;
     margin: 10px;
     border-radius: 20px;
     justify-content: center;
-    
 }
 
 .item-image{
     height: 200px;
     margin: 20px;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 30px;
+    
 }
 
 .item-names{
-    font-family: inter, sans serif;
+    font-family: inter, sans-serif;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 750;
     align-items: center;
     justify-self: center;
     margin: 0px 0px 5px;
+    text-align: center;
 }
 
 .descrip{
-    font-family: inter, sans serif;
+    font-family: inter, sans-serif;
     font-size: 16px;
     color: #8d8d9b;
     align-items: center;
     justify-self: center;
     margin: 0px 0px 5px;
+    text-align: center;
 }
 
 .item-price{
@@ -236,7 +248,30 @@ button {
     color: #CE1211;
 }
 
+.menugroup{
+    color: #ce1212;
+    font-size: 36px;
+    font-family: Inter, sans-serif;
+    
+    text-align: center;
+    margin: 120px;
+    margin-bottom: 5px;
+}
+
+#lastrow{
+    padding-bottom: 200px;
+}
 
 
+@media screen and (min-width:500px){
+    .menu , .menu2{
+        display: flex;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      
+        margin-left: 200px;
+        margin-right: 200px;
+    }
 
+    
+}
 
